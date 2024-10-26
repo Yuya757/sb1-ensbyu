@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Slack Harassment Detector",
+  "version": "1.0",
+  "description": "Detects potential harassment in Slack messages",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/*"],
+      "js": ["src/content.ts"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
